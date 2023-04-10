@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link-animation {
+    position: relative;
+    text-decoration: none;
+}
+
+.link-animation::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #4B5563;
+    transform: scaleX(0) rotate(0);
+    transform-origin: center bottom;
+    transition: transform 0.2s ease-in-out;
+}
+
+.link-animation:hover::before {
+    transform: scaleX(1) rotate(360deg);
+}
+
+.link-animation:hover {
+    animation: rotate-360 0.5s linear;
+}
+
+@keyframes rotate-360 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
