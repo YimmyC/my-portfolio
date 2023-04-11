@@ -1,13 +1,15 @@
 import Header from "./components/Header";
-import HeaderDemo from "./components/HeaderDemo";
-import Home from "./components/Home";
+import Home from "./components/Home.js";
 import Footer from "./components/Footer";
+import AboutMe from "./components/AboutMe";
+import Work from "./components/Work";
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
-      <HeaderDemo />
+      <Header />
+      <AboutMe />
+      <Work />
       <Home />
       <Footer />
     </>
