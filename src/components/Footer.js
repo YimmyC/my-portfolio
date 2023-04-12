@@ -17,7 +17,7 @@ function Footer() {
           <a href="#contact" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
             Contact
           </a>
-          <a href="#Resume" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
+          <a href="#resume" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
             Resume
           </a>
         </nav>
