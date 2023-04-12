@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="z-10 relative flex flex-col justify-center items-center bg-transparent shadow-md rounded-md p-6 w-full h-screen mx-auto">
-      <h2 className="font-prompt text-9xl font-bold mb-4 text-center">Contact</h2>
+      <h2 className="font-prompt text-5xl md:text-9xl font-bold mb-4 text-center">Contact</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full max-w-2xl">
         <div className="mb-4">
           <label htmlFor="name" className="font-prompt text-gray-700 text-base mb-2">
