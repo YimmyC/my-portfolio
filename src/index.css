@@ -38,3 +38,9 @@
         transform: rotate(360deg);
     }
 }
+
+particles {
+ position: fixed;
+ width: 100%;
+ z-index: -1;
+ }
