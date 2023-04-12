@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 import ParticlesBackground from "./components/Particles";
 import { Routes, Route } from "react-router-dom";
 import ReactAudioPlayer from "react-audio-player";
@@ -24,6 +25,7 @@ function App() {
       <AboutMe style={{ position: "relative", zIndex: 1 }} />
       <Work style={{ position: "relative", zIndex: 1 }} />
       <Contact style={{ position: "relative", zIndex: 1 }} />
+      <Resume style={{ position: "relative", zIndex: 1 }} />
       <ReactAudioPlayer id="audio" src={tune} autoPlay controls />
       <Footer style={{ position: "relative", zIndex: 1 }} />
     </div>
