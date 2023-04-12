@@ -6,6 +6,8 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import ParticlesBackground from "./components/Particles";
 import { Routes, Route } from "react-router-dom";
+import ReactAudioPlayer from "react-audio-player";
+import tune from "./assets/itsawar.mp3";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <AboutMe style={{ position: "relative", zIndex: 1 }} />
       <Work style={{ position: "relative", zIndex: 1 }} />
       <Contact style={{ position: "relative", zIndex: 1 }} />
+      <ReactAudioPlayer src={tune} autoPlay controls />
       <Footer style={{ position: "relative", zIndex: 1 }} />
     </div>
   );
