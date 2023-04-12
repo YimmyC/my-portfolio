@@ -40,7 +40,7 @@ function Header() {
             <h1 className="text-lg sm:text-2xl font-roboto">Jimmy Cassano</h1>
           </a>
         </div>
-        <nav className="flex flex-col sm:flex-row items-center font-roboto font-medium">
+        <nav className="hidden sm:flex flex-col sm:flex-row items-center font-roboto font-medium">
           <a href="#about" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
             About
           </a>
