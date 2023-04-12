@@ -3,21 +3,19 @@ import Home from "./components/Home.js";
 import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 import Work from "./components/Work";
-import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
-import Particles from "./components/Particles";
+import Contact from "./components/Contact";
+import ParticlesBackground from "./components/Particles";
 
 function App() {
   return (
-    <div>
-      {/* <Particles className="particles" /> */}
+    <div style={{ position: "relative", zIndex: 0 }}>
+      <ParticlesBackground style={{ position: "absolute", top: 0, left: 0, zIndex: -1, mixBlendMode: "screen" }} />
 
-      <Header />
-      <AboutMe />
-
-      <Work />
-
-      {/* <Home /> */}
-      <Footer />
+      <Header style={{ position: "relative", zIndex: 1 }} />
+      <AboutMe style={{ position: "relative", zIndex: 1 }} />
+      <Work style={{ position: "relative", zIndex: 1 }} />
+      <Contact style={{ position: "relative", zIndex: 1 }} />
+      <Footer style={{ position: "relative", zIndex: 1 }} />
     </div>
   );
 }
