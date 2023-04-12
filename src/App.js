@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import ParticlesBackground from "./components/Particles";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (

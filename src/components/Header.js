@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import proPic from "../assets/louvresquare.png";
 
 function Header() {
@@ -32,20 +33,24 @@ function Header() {
     <header className={headerClass} style={headerStyle}>
       <div className="container mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center py-4 sm:py-6">
         <div className="flex items-center mb-4 sm:mb-0">
-          <img src={proPic} alt="Portrait" className="rounded-full ring-2 ring-black mr-4" width={50} height={50} />
-          <h1 className="text-lg sm:text-2xl font-roboto">Jimmy Cassano</h1>
+          <a href="/">
+            <img src={proPic} alt="Portrait" className="rounded-full ring-2 ring-black mr-4" width={50} height={50} />
+          </a>
+          <a href="/">
+            <h1 className="text-lg sm:text-2xl font-roboto">Jimmy Cassano</h1>
+          </a>
         </div>
         <nav className="flex flex-col sm:flex-row items-center font-roboto font-medium">
-          <a href="/about" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
+          <a href="#about" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
             About
           </a>
-          <a href="/work" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
+          <a href="#work" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
             Work
           </a>
-          <a href="/contact" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
+          <a href="#contact" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
             Contact
           </a>
-          <a href="/Resume" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
+          <a href="#resume" className="text-gray-700 link-animation my-2 sm:my-0 mx-4 sm:mx-6 transition duration-300 ease-in-out hover:text-blue-500 hover:underline hover:rotate-360">
             Resume
           </a>
         </nav>

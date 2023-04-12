@@ -28,7 +28,7 @@ const AboutMe = () => {
   }, [isTyping, typingSpeed]);
 
   return (
-    <div className="z-10 relative flex flex-col justify-center items-center bg-transparent shadow-md rounded-md p-6 w-full h-screen mx-auto">
+    <div id="about" className="z-10 relative flex flex-col justify-center items-center bg-transparent shadow-md rounded-md p-6 w-full h-screen mx-auto">
       <h2 className="font-prompt text-9xl font-bold mb-4 text-center">About Me</h2>
       <p className="font-prompt text-gray-700 text-2xl mb-4">{text}</p>
     </div>
