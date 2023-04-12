@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const AboutMe = () => {
   const [text, setText] = useState("");
-  const [isTyping, setIsTyping] = useState(true);
+  const [isTyping, setIsTyping] = useState(false);
   const typingSpeed = 20; // in milliseconds
 
   useEffect(() => {
@@ -27,9 +27,18 @@ const AboutMe = () => {
     return () => clearTimeout(timeout);
   }, [isTyping, typingSpeed]);
 
+  const handleClick = () => {
+    setIsTyping(true);
+  };
+
   return (
     <div id="about" className="z-10 relative flex flex-col justify-center items-center bg-transparent shadow-md rounded-md p-6 w-full h-screen mx-auto">
       <h2 className="font-prompt text-9xl font-bold mb-4 text-center">About Me</h2>
+      {!isTyping && (
+        <span className="font-prompt text-black underline cursor-pointer" onClick={handleClick}>
+          Click to read
+        </span>
+      )}
       <p className="font-prompt text-gray-700 text-2xl mb-4">{text}</p>
     </div>
   );
