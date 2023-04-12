@@ -47,6 +47,7 @@ const Work = () => {
   return (
     <div className="flex flex-wrap justify-center items-center p-4 sm:p-8">
       <div className="flex flex-wrap justify-center items-center w-full max-w-7xl">
+        <h1 className=" text-8xl sm:text-5xl font-prompt text-center mb-8">Work</h1>
         {projects.map((project, index) => (
           <div key={index} className="relative w-full sm:w-screen h-80 sm:h-screen" onMouseOver={() => handleMouseOver(index)} onMouseLeave={() => handleMouseLeave()}>
             <img src={project.image} alt={project.name} className={`absolute inset-0 object-cover object-center ${hoveredIndex === index ? "scale-110" : "scale-100"} transition-all duration-300`} />
