@@ -50,17 +50,21 @@ const Work = () => {
   return (
     <div id="work" className="z-10 relative flex flex-wrap justify-center items-center p-4 sm:p-8">
       <div className="flex flex-wrap justify-center items-center w-full max-w-7xl">
-        <h1 className=" text-8xl sm:text-5xl font-prompt text-center mb-8">Work</h1>
-        {projects.map((project, index) => (
-          <div key={index} className="relative w-full sm:w-screen h-screen overflow-hidden max-h-screen" onMouseOver={() => handleMouseOver(index)} onMouseLeave={() => handleMouseLeave()}>
-            <img src={project.image} alt={project.name} className={`absolute inset-0 w-full h-full object-cover object-center ${hoveredIndex === index ? "filter blur-sm" : ""} transition-all duration-300`} />
-            {hoveredIndex === index && (
-              <a href={project.link} target="_blank" className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50 text-white font-semibold text-lg transition-all duration-300">
-                {project.name}
-              </a>
-            )}
-          </div>
-        ))}
+        <div className="w-full">
+          <h1 className="text-8xl sm:text-5xl font-prompt text-center mb-8">Work</h1>
+        </div>
+        <div className="flex flex-wrap justify-between items-center w-full">
+          {projects.map((project, index) => (
+            <div key={index} className="relative w-full sm:w-1/2 h-screen overflow-hidden max-h-screen mb-8 px-4" onMouseOver={() => handleMouseOver(index)} onMouseLeave={() => handleMouseLeave()}>
+              <img src={project.image} alt={project.name} className={`absolute inset-0 w-full h-full object-cover object-center ${hoveredIndex === index ? "filter blur-sm" : ""} transition-all duration-300`} />
+              {hoveredIndex === index && (
+                <a href={project.link} target="_blank" className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50 text-white font-semibold text-lg transition-all duration-300">
+                  {project.name}
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
