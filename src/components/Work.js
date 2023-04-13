@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import passwordBandit from "../assets/passwordbandit.jpg";
 import cocktailPic from "../assets/cocktailDreamsSite.png";
 import readmepic from "../assets/readmedemo.png";
+import foodfund from "../assets/SiteScreenshotFoodFund.png";
+import booksite from "../assets/booksite.png";
+import texteditorsite from "../assets/texteditorsite.png";
 
 const Work = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -13,7 +16,7 @@ const Work = () => {
       link: "https://dork-diaries.github.io/API-team-project/",
     },
     {
-      name: "Project 2",
+      name: "Readme Generator",
       image: readmepic,
       link: "https://github.com/YimmyC/readme-gen",
     },
@@ -23,19 +26,19 @@ const Work = () => {
       link: "https://github.com/YimmyC/Password-Generator",
     },
     {
-      name: "Project 4",
-      image: "https://via.placeholder.com/1920x1080",
-      link: "#",
+      name: "Food Fund",
+      image: foodfund,
+      link: "https://github.com/TheSimpleLifers/project-two",
     },
     {
-      name: "Project 5",
-      image: "https://via.placeholder.com/1920x1080",
-      link: "#",
+      name: "Book search engine",
+      image: booksite,
+      link: "https://github.com/YimmyC/book-search",
     },
     {
-      name: "Project 6",
-      image: "https://via.placeholder.com/1920x1080",
-      link: "#",
+      name: "Text Editor",
+      image: texteditorsite,
+      link: "https://github.com/YimmyC/PWA_text_editor",
     },
   ];
 
