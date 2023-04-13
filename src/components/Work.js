@@ -57,7 +57,7 @@ const Work = () => {
           {projects.map((project, index) => (
             <div key={index} className="relative w-full sm:w-1/2 h-auto overflow-hidden mb-8 px-4" onMouseOver={() => handleMouseOver(index)} onMouseLeave={() => handleMouseLeave()}>
               <div style={{ paddingBottom: "100%" }}>
-                <img src={project.image} alt={project.name} className={`absolute inset-0 w-full h-full object-cover object-center ${hoveredIndex === index ? "filter blur-sm" : ""} transition-all duration-300`} />
+                <img src={project.image} alt={project.name} className={`absolute inset-0 w-full h-full object-cover object-center opacity-80 ${hoveredIndex === index ? "filter blur-sm opacity-60" : ""} transition-all duration-300`} />
               </div>
               {hoveredIndex === index && (
                 <a href={project.link} target="_blank" className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50 text-white font-semibold text-lg transition-all duration-300">
